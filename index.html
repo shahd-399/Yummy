@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="loading-screen text-white">
+        <i class="fa fa-spinner fa-spin fa-5x"></i>
+    </div>
+    <aside class="position-fixed top-0 bottom-0 d-flex z-3">
+        <nav class="bg-black text-white d-flex flex-column justify-content-between p-4">
+            <ul class="list-unstyled">
+                <li class="pb-3 wow fadeInUp"><a href="#Search">Search</a></li>
+
+                <li class="pb-3 wow fadeInUp"><a href="#Categories">Categories</a></li>
+
+                <li class="pb-3 wow fadeInUp"><a href="#Area">Area</a></li>
+
+                <li class="pb-3 wow fadeInUp"><a href="#Ingredients">Ingredients</a></li>
+
+                <li class="pb-3 wow fadeInUp"><a href="#Contact-Us">Contact Us</a></li>
+            </ul>
+            <div class="copyright">
+                <div class="icons">
+                    <i class="fa-brands fa-facebook "></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-sharp fa-solid fa-globe"></i>
+                </div>
+                <p class="mb-0">
+                    Copyright Â© 2019 All Rights
+                </p>
+                <p>Reserved.</p>
+            </div>
+        </nav>
+        <div class="logo py-4 px-2 d-flex flex-column justify-content-between bg-white">
+            <img src="images/logo.png" alt="">
+            <i class="fa-solid fa-bars fa-3x d-flex justify-content-center align-items-center"></i>
+            <i class="fa-solid fa-xmark fa-3x d-none d-flex justify-content-center align-items-center"></i>
+            <div class="icons d-flex flex-column">
+                <i class="fa-sharp fa-solid fa-globe d-flex justify-content-center align-items-center mb-2"></i>
+                <i class="fa-solid fa-share-nodes d-flex justify-content-center align-items-center"></i>
+            </div>
+        </div>
+    </aside>
+    <div class="search-input container p-5 d-none">
+        <div class="row">
+            <div class="col">
+                <input type="text" class="search-by-name form-control bg-transparent text-white" placeholder="Search By Name" aria-label="First name">
+            </div>
+            <div class="col">
+                <input type="text" class="search-first-letter form-control bg-transparent text-white" placeholder="Search By First Letter" maxlength="1">
+            </div>
+        </div>
+    </div>
+    <div class="contact-us container w-75 p-4 d-none vh-100 d-flex justify-content-center align-items-center">
+        <form action="" class="w-100 text-center">
+            <div class="row my-3">
+                <div class="col">
+                    <input type="text" class="form-control mb-1" placeholder="Enter Your Name">
+                    <div class="alert alert-danger p-4 d-none" role="alert">
+                        Special characters and numbers not allowed
+                    </div>
+                </div>
+                <div class="col">
+                    <input type="email" class="form-control mb-1" placeholder="Enter Your Email">
+                    <div class="alert alert-danger p-4 d-none" role="alert">
+                        Email not valid *exemple@yyy.zzz
+                    </div>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col">
+                    <input type="tel" class="form-control mb-1" placeholder="Enter Your Phone">
+                    <div class="alert alert-danger p-4 d-none" role="alert">
+                        Enter valid Phone Number
+                    </div>
+                </div>
+                <div class="col">
+                    <input type="number" class="form-control mb-1" placeholder="Enter Your Age">
+                    <div class="alert alert-danger p-4 d-none" role="alert">
+                        Enter valid age
+                    </div>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col">
+                    <input type="password" class="form-control mb-1" placeholder="Enter Your Password">
+                    <div class="alert alert-danger p-4
+                    d-none" role="alert">
+                        Enter valid password *Minimum eight characters, at least one letter and one number:*
+                    </div>
+                </div>
+                <div class="col">
+                    <input type="password" class="form-control mb-1" placeholder="Repassword">
+                    <div class="alert alert-danger p-4 d-none" role="alert">
+                        Enter valid repassword
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-outline-danger m-auto" disabled>Danger</button>
+        </form>
+    </div>
+    <div class="container">
+        <div id="Row" class="row p-4 g-4">
+            
+        </div>
+    </div>
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
